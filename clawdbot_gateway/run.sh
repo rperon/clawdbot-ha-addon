@@ -145,7 +145,6 @@ cd "${REPO_DIR}"
 
 log "installing dependencies"
 pnpm config set confirmModulesPurge false >/dev/null 2>&1 || true
-pnpm config set optimisticRepeatInstall true >/dev/null 2>&1 || true
 pnpm install --no-frozen-lockfile --prefer-frozen-lockfile
 log "building gateway"
 pnpm build

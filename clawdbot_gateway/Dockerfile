@@ -19,7 +19,7 @@ RUN apt-get update \
 ENV PNPM_HOME=/pnpm
 ENV PATH="${PNPM_HOME}:${PATH}"
 
-RUN npm install -g pnpm@latest \
+RUN npm install -g pnpm@9.12.3 \
   && mkdir -p /pnpm \
   && pnpm config set global-bin-dir /pnpm \
   && pnpm add -g clawdhub
